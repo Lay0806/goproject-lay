@@ -1,0 +1,10 @@
+FROM golang:latest
+MAINTAINER Lay "lay.wang@blackshark.com"
+
+WORKDIR $GOPATH/src/hellodocker
+ADD . $GOPATH/src/hellodocker
+
+RUN go build .
+
+EXPOSE 8080
+ENTRYPOINT ["./hellodocker"]
