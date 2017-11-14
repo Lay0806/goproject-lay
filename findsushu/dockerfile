@@ -1,0 +1,12 @@
+FROM golang:latest
+
+MAINTAINER Lay "lay.wang@blackshark.com"
+
+WORKDIR $GOPATH/src/findsushu
+ADD . $GOPATH/src/findsushu
+
+RUN go build .
+
+EXPOSE 10666
+
+ENTRYPOINT ["./findsushu"]
