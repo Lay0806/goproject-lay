@@ -9,3 +9,6 @@ a http proxy basic on golang
 
 ### findprimenumber
 use goroutines and channel to find prime number
+
+### boradcastmessage
+use tcp to boradcast message
